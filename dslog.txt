@@ -1,0 +1,161 @@
+Log-file of program ./dymosim
+(generated: Sat Apr 25 00:45:39 2020)
+
+dymosim started
+... "dsin.txt" loading (dymosim input file)
+... "dsu.txt" loading (input signals u)
+
+... Warning message from dymosim
+The following model input signals are assumed to be at their start-value during
+simulation, since file "dsu.txt" could not be opened
+(No such file or directory):
+   controlBus.engineBus.speed
+
+... "AccelerationTest.mat" creating (simulation result file)
+
+Integration started at T = 0 using integration method DASSL
+(DAE multi-step solver (dassl/dasslrt of Petzold modified by Dassault Systemes))
+Residual component 1 of system 2 is -1.600525e+73
+Residual component 2 of system 2 is -2.340589e+72
+Residual component 3 of system 2 is 3.412963e+58
+Residual component 4 of system 2 is -4.965341e+72
+Residual component 5 of system 2 is 2.603853e+73
+Residual component 6 of system 2 is 3.397051e+72
+Residual component 7 of system 2 is -1.487383e+58
+Residual component 8 of system 2 is -2.194479e+74
+Residual component 9 of system 2 is 1.455607e+57
+Residual component 10 of system 2 is 3.883068e+56
+Residual component 11 of system 2 is -7.555906e+69
+Residual component 12 of system 2 is -1.818919e+69
+Residual component 13 of system 2 is 2.631253e+54
+Residual component 14 of system 2 is -4.287646e+53
+Residual component 15 of system 2 is 4.940504e+52
+Residual component 16 of system 2 is 1.012483e+55
+Residual component 17 of system 2 is 1.251405e+58
+Residual component 18 of system 2 is -1.332906e+60
+Residual component 19 of system 2 is 1.880030e+59
+LINEAR SYSTEM OF EQUATIONS IS SINGULAR AT TIME = 2.00939
+...    Linear system of equations: simulation.linear[2]
+... Variables which cannot be uniquely computed:
+vehicle.rearAxle.rightLinkage.upright.outerJoints.upright.f_rod = -2.66939E+72
+... NOT ACCEPTING SINCE TOO LARGE RESDIUAL
+Solver will attempt to handle this problem.
+
+Residual component 1 of system 2 is 2.519821e+44
+Residual component 2 of system 2 is -1.242423e+62
+Residual component 3 of system 2 is -2.241334e+42
+Residual component 4 of system 2 is -1.511728e+62
+Residual component 5 of system 2 is 2.700008e+44
+Residual component 6 of system 2 is -9.982343e+43
+Residual component 7 of system 2 is 8.078260e+42
+Residual component 8 of system 2 is 8.139564e+42
+Residual component 9 of system 2 is 1.228980e+43
+Residual component 10 of system 2 is -5.110664e+41
+Residual component 11 of system 2 is -2.475612e+56
+Residual component 12 of system 2 is -5.261971e+42
+Residual component 13 of system 2 is 1.363944e+42
+Residual component 14 of system 2 is 1.507280e+42
+Residual component 15 of system 2 is 1.370559e+40
+Residual component 16 of system 2 is 8.251708e+38
+Residual component 17 of system 2 is 1.258809e+43
+Residual component 18 of system 2 is -4.815113e+47
+Residual component 19 of system 2 is -8.504929e+46
+LINEAR SYSTEM OF EQUATIONS IS SINGULAR AT TIME = 2.00939
+...    Linear system of equations: simulation.linear[2]
+... Variables which cannot be uniquely computed:
+vehicle.frontAxle.rightLinkage.upright.outerJoints.upright.f_rod = 3.77614E+57
+... NOT ACCEPTING SINCE TOO LARGE RESDIUAL
+Solver will attempt to handle this problem.
+
+Error: The following error was detected at time: 2.009394359173577
+  
+Singular position of loop (either no or two analytic solutions;
+the mechanism has lost one-degree-of freedom in this position).
+Try first to use another Modelica.Mechanics.MultiBody.Joints.Assemblies.JointXXX component.
+In most cases it is best that the joints outside of the JointXXX
+component are revolute and NOT prismatic joints. If this also
+lead to singular positions, it could be that this ki
+  Failed condition: vehicle.frontAxle.rightLinkage.rockerPushrod.pushrod.revolute.k1a > 1E-10
+
+Integration terminated before reaching "StopTime" at T = 2.01
+States and derivatives:
+vehicle.driverEnvironment.steeringConverter.position.phi=7.65041e-18 -9.04604e-17
+vehicle.driverEnvironment.steeringConverter.position.w=-9.04604e-17 -3.63479e-14
+vehicle.brakes.brake_1.torqueReaction.flange_b.phi=0.0527303 2.52237
+vehicle.brakes.brake_1.brake.friction.z=-0.0100001 0.000416707
+vehicle.brakes.brake_2.torqueReaction.flange_b.phi=-0.115597 -28.2595
+vehicle.brakes.brake_2.brake.friction.z=-0.01 8.69444e-05
+vehicle.brakes.brake_3.torqueReaction.flange_b.phi=-0.000173579 7.35279
+vehicle.brakes.brake_3.brake.friction.z=-0.005 2.30184e-06
+vehicle.brakes.brake_4.torqueReaction.flange_b.phi=-0.0144025 -3.50811
+vehicle.brakes.brake_4.brake.friction.z=-0.005 3.24158e-06
+vehicle.frontAxle.leftLinkage.upright.upright.hubBearing_2.mounting1D.flange_b.phi=0.0527303 2.52237
+vehicle.frontAxle.leftLinkage.lowerControlArmMounts.joint_1.motion.phi=-0.183483 -10.128
+vehicle.frontAxle.leftLinkage.lowerControlArmMounts.joint_1.motion.w=-10.128 3.6956e+08
+vehicle.frontAxle.rightLinkage.upright.upright.hubBearing_2.mounting1D.flange_b.phi=-0.115597 -28.2595
+vehicle.frontAxle.rightLinkage.lowerControlArmMounts.joint_1.motion.phi=0.543891 97.1772
+vehicle.frontAxle.rightLinkage.lowerControlArmMounts.joint_1.motion.w=97.1772 -3.26995e+08
+vehicle.rearAxle.leftLinkage.upright.upright.hubBearing_2.mounting1D.flange_b.phi=-0.000173579 7.35279
+vehicle.rearAxle.leftLinkage.lowerControlArmMounts.joint_1.motion.phi=-0.631805 -85.74
+vehicle.rearAxle.leftLinkage.lowerControlArmMounts.joint_1.motion.w=-85.74 8.34918e+08
+vehicle.rearAxle.leftLinkage.damperStrut.bumpStopModel.freqDependentBumpstop[1].s_rel_spring_P=-0.121408 -12.6969
+vehicle.rearAxle.leftLinkage.damperStrut.bumpStopModel.freqDependentBumpstop[2].s_rel_spring_P=-0.121408 -12.6969
+vehicle.rearAxle.rightLinkage.upright.upright.hubBearing_2.mounting1D.flange_b.phi=-0.0144025 -3.50811
+vehicle.rearAxle.rightLinkage.lowerControlArmMounts.joint_1.motion.phi=-0.180217 -31.7539
+vehicle.rearAxle.rightLinkage.lowerControlArmMounts.joint_1.motion.w=-31.7539 -1.92731e+08
+vehicle.rearAxle.rightLinkage.damperStrut.bumpStopModel.freqDependentBumpstop[1].s_rel_spring_P=0.0382375 6.68451
+vehicle.rearAxle.rightLinkage.damperStrut.bumpStopModel.freqDependentBumpstop[2].s_rel_spring_P=0.0382375 6.68451
+vehicle.rearAxle.antiRoll.aRBMount.chassisMount1D.flange_b.phi=-0.381295 -60.7546
+vehicle.rearAxle.antiRoll.aRBMount.rightMount1D.flange_b.phi=-0.133475 -14.8635
+vehicle.rearAxle.antiRoll.aRBMount.leftMount1D.flange_b.phi=-0.920786 -23.0551
+vehicle.wheel_1.rim.mass.phi=0.32784 60.3792
+vehicle.wheel_1.rim.mass.w=60.3792 -2.94109e+08
+vehicle.wheel_1.tyreForces.slipForces.slipCalculation.u=0.0326629 20.7653
+vehicle.wheel_1.tyreForces.slipForces.slipCalculation.v=-0.000638089 -2.91649
+vehicle.wheel_2.rim.mass.phi=0.345445 64.3406
+vehicle.wheel_2.rim.mass.w=64.3406 -2.99324e+08
+vehicle.wheel_2.tyreForces.slipForces.slipCalculation.u=0.0768965 24.1343
+vehicle.wheel_2.tyreForces.slipForces.slipCalculation.v=-0.0255435 -4.02899
+vehicle.wheel_3.rim.mass.phi=0.343294 61.9628
+vehicle.wheel_3.rim.mass.w=61.9628 -3.09707e+08
+vehicle.wheel_3.tyreForces.slipForces.slipCalculation.u=0.0899921 19.1821
+vehicle.wheel_3.tyreForces.slipForces.slipCalculation.v=-0.0585657 -7.01804
+vehicle.wheel_4.rim.mass.phi=0.336082 60.9231
+vehicle.wheel_4.rim.mass.w=60.9231 -2.92931e+08
+vehicle.wheel_4.tyreForces.slipForces.slipCalculation.u=0.00865252 12.3001
+vehicle.wheel_4.tyreForces.slipForces.slipCalculation.v=0.00741848 1.19046
+vehicle.motion.prismatic_x.s=0.00808316 -5.15025
+vehicle.motion.prismatic_x.v=-5.15025 1.36083e+07
+vehicle.motion.prismatic_z.s=0.299571 25.1392
+vehicle.motion.prismatic_z.v=25.1392 -1.03892e+08
+vehicle.motion.revolute_y.phi=-0.381295 -60.7546
+vehicle.motion.revolute_y.w=-60.7546 2.907e+08
+vehicle.driveMotor_1.mechProperties.mounting1D.flange_b.phi=0.0527303 2.52237
+vehicle.motorController.regerativeBrakingLogic.pID_DelayAntiWind.derivative.x=6.73464e-07 0.000411024
+vehicle.motorController.regerativeBrakingLogic.pID_DelayAntiWind.integral.uInt=6.77989e-08 4.17759e-05
+vehicle.motorController.regerativeBrakingLogic.pID_DelayAntiWind.integral.filtered=0 -0
+vehicle.motorController.regerativeBrakingLogic.pID_DelayAntiWind.integral.latchOut=0 0
+vehicle.motorController.regerativeBrakingLogic.filter_SOC.y=0.5 0
+vehicle.motorController.regerativeBrakingLogic.filter_Speed.y=4.03683 537.655
+vehicle.motorController.regerativeBrakingLogic.filter_Demand.y=8.32908e-06 -0.00832908
+vehicle.driveMotor_2.mechProperties.mounting1D.flange_b.phi=-0.115597 -28.2595
+vehicle.driveMotor_3.mechProperties.mounting1D.flange_b.phi=-0.000173579 7.35279
+vehicle.driveMotor_4.mechProperties.mounting1D.flange_b.phi=-0.0144025 -3.50811
+   CPU-time for integration                : 3.31 seconds
+   CPU-time for one grid interval          : 97.5 milliseconds
+   CPU-time for initialization             : 0.014 seconds
+   Number of result points                 : 54
+   Number of grid points                   : 35
+   Number of accepted steps                : 684
+   Number of f-evaluations (dynamics)      : 1648
+   Number of crossing function evaluations : 781
+   Number of Jacobian-evaluations          : 278
+   Number of model time events             : 2
+   Number of input time events             : 0
+   Number of state events                  : 8
+   Number of step events                   : 0
+   Minimum integration stepsize            : 9.37e-11
+   Maximum integration stepsize            : 0.0269
+   Maximum integration order               : 5
+Calling terminal section
+... "dsfinal.txt" creating (final states)
